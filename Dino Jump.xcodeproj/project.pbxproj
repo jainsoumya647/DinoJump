@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF22CE27250AD19C00DF99AD /* SVDino.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF22CE26250AD19C00DF99AD /* SVDino.swift */; };
+		EF22CE2A250BEADF00DF99AD /* dinosaur.png in Resources */ = {isa = PBXBuildFile; fileRef = EF22CE29250BEADE00DF99AD /* dinosaur.png */; };
+		EF22CE2D250C1DCD00DF99AD /* SVDinoLeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF22CE2C250C1DCD00DF99AD /* SVDinoLeg.swift */; };
+		EF315FB225096789001FF033 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF315FB125096789001FF033 /* AppDelegate.swift */; };
+		EF315FB82509678A001FF033 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF315FB72509678A001FF033 /* GameScene.swift */; };
+		EF315FBA2509678A001FF033 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF315FB92509678A001FF033 /* GameViewController.swift */; };
+		EF315FBD2509678A001FF033 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF315FBB2509678A001FF033 /* Main.storyboard */; };
+		EF315FBF25096795001FF033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF315FBE25096795001FF033 /* Assets.xcassets */; };
+		EF315FC225096795001FF033 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF315FC025096795001FF033 /* LaunchScreen.storyboard */; };
+		EF315FCD25096796001FF033 /* Dino_JumpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF315FCC25096796001FF033 /* Dino_JumpTests.swift */; };
+		EF315FD825096796001FF033 /* Dino_JumpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF315FD725096796001FF033 /* Dino_JumpUITests.swift */; };
+		EF315FE825096EE2001FF033 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF315FE725096EE2001FF033 /* UIColor+Extension.swift */; };
+		EF315FED25096FC2001FF033 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF315FEC25096FC2001FF033 /* Constants.swift */; };
+		EF315FF025097146001FF033 /* SVMovingGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF315FEF25097146001FF033 /* SVMovingGround.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF315FC925096796001FF033 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF315FA625096789001FF033 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF315FAD25096789001FF033;
+			remoteInfo = "Dino Jump";
+		};
+		EF315FD425096796001FF033 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF315FA625096789001FF033 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF315FAD25096789001FF033;
+			remoteInfo = "Dino Jump";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF22CE26250AD19C00DF99AD /* SVDino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVDino.swift; sourceTree = "<group>"; };
+		EF22CE29250BEADE00DF99AD /* dinosaur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dinosaur.png; sourceTree = "<group>"; };
+		EF22CE2C250C1DCD00DF99AD /* SVDinoLeg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVDinoLeg.swift; sourceTree = "<group>"; };
+		EF315FAE25096789001FF033 /* Dino Jump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dino Jump.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF315FB125096789001FF033 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF315FB72509678A001FF033 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		EF315FB92509678A001FF033 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		EF315FBC2509678A001FF033 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF315FBE25096795001FF033 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF315FC125096795001FF033 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF315FC325096795001FF033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF315FC825096796001FF033 /* Dino JumpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dino JumpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF315FCC25096796001FF033 /* Dino_JumpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dino_JumpTests.swift; sourceTree = "<group>"; };
+		EF315FCE25096796001FF033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF315FD325096796001FF033 /* Dino JumpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dino JumpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF315FD725096796001FF033 /* Dino_JumpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dino_JumpUITests.swift; sourceTree = "<group>"; };
+		EF315FD925096796001FF033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF315FE725096EE2001FF033 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		EF315FEC25096FC2001FF033 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EF315FEF25097146001FF033 /* SVMovingGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVMovingGround.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF315FAB25096789001FF033 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF315FC525096796001FF033 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF315FD025096796001FF033 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF22CE24250AC2E900DF99AD /* Ground */ = {
+			isa = PBXGroup;
+			children = (
+				EF315FEF25097146001FF033 /* SVMovingGround.swift */,
+			);
+			path = Ground;
+			sourceTree = "<group>";
+		};
+		EF22CE25250AD18100DF99AD /* Dino */ = {
+			isa = PBXGroup;
+			children = (
+				EF22CE2B250C1DB800DF99AD /* DinoLeg */,
+				EF22CE26250AD19C00DF99AD /* SVDino.swift */,
+			);
+			path = Dino;
+			sourceTree = "<group>";
+		};
+		EF22CE28250BEABC00DF99AD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EF22CE29250BEADE00DF99AD /* dinosaur.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		EF22CE2B250C1DB800DF99AD /* DinoLeg */ = {
+			isa = PBXGroup;
+			children = (
+				EF22CE2C250C1DCD00DF99AD /* SVDinoLeg.swift */,
+			);
+			path = DinoLeg;
+			sourceTree = "<group>";
+		};
+		EF315FA525096789001FF033 = {
+			isa = PBXGroup;
+			children = (
+				EF315FB025096789001FF033 /* Dino Jump */,
+				EF315FCB25096796001FF033 /* Dino JumpTests */,
+				EF315FD625096796001FF033 /* Dino JumpUITests */,
+				EF315FAF25096789001FF033 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF315FAF25096789001FF033 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF315FAE25096789001FF033 /* Dino Jump.app */,
+				EF315FC825096796001FF033 /* Dino JumpTests.xctest */,
+				EF315FD325096796001FF033 /* Dino JumpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF315FB025096789001FF033 /* Dino Jump */ = {
+			isa = PBXGroup;
+			children = (
+				EF315FEE25097116001FF033 /* Project Group */,
+				EF315FE525096CDF001FF033 /* Supporting Files */,
+				EF315FB125096789001FF033 /* AppDelegate.swift */,
+				EF315FBB2509678A001FF033 /* Main.storyboard */,
+				EF315FBE25096795001FF033 /* Assets.xcassets */,
+				EF315FC025096795001FF033 /* LaunchScreen.storyboard */,
+				EF315FC325096795001FF033 /* Info.plist */,
+			);
+			path = "Dino Jump";
+			sourceTree = "<group>";
+		};
+		EF315FCB25096796001FF033 /* Dino JumpTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF315FCC25096796001FF033 /* Dino_JumpTests.swift */,
+				EF315FCE25096796001FF033 /* Info.plist */,
+			);
+			path = "Dino JumpTests";
+			sourceTree = "<group>";
+		};
+		EF315FD625096796001FF033 /* Dino JumpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF315FD725096796001FF033 /* Dino_JumpUITests.swift */,
+				EF315FD925096796001FF033 /* Info.plist */,
+			);
+			path = "Dino JumpUITests";
+			sourceTree = "<group>";
+		};
+		EF315FE525096CDF001FF033 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF22CE28250BEABC00DF99AD /* Images */,
+				EF315FE925096FA2001FF033 /* Constants */,
+				EF315FE625096CF2001FF033 /* Extenstions */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF315FE625096CF2001FF033 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				EF315FE725096EE2001FF033 /* UIColor+Extension.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		EF315FE925096FA2001FF033 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EF315FEC25096FC2001FF033 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		EF315FEE25097116001FF033 /* Project Group */ = {
+			isa = PBXGroup;
+			children = (
+				EF22CE25250AD18100DF99AD /* Dino */,
+				EF315FB72509678A001FF033 /* GameScene.swift */,
+				EF315FB92509678A001FF033 /* GameViewController.swift */,
+				EF22CE24250AC2E900DF99AD /* Ground */,
+			);
+			path = "Project Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF315FAD25096789001FF033 /* Dino Jump */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF315FDC25096796001FF033 /* Build configuration list for PBXNativeTarget "Dino Jump" */;
+			buildPhases = (
+				EF315FAA25096789001FF033 /* Sources */,
+				EF315FAB25096789001FF033 /* Frameworks */,
+				EF315FAC25096789001FF033 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dino Jump";
+			productName = "Dino Jump";
+			productReference = EF315FAE25096789001FF033 /* Dino Jump.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF315FC725096796001FF033 /* Dino JumpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF315FDF25096796001FF033 /* Build configuration list for PBXNativeTarget "Dino JumpTests" */;
+			buildPhases = (
+				EF315FC425096796001FF033 /* Sources */,
+				EF315FC525096796001FF033 /* Frameworks */,
+				EF315FC625096796001FF033 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF315FCA25096796001FF033 /* PBXTargetDependency */,
+			);
+			name = "Dino JumpTests";
+			productName = "Dino JumpTests";
+			productReference = EF315FC825096796001FF033 /* Dino JumpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF315FD225096796001FF033 /* Dino JumpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF315FE225096796001FF033 /* Build configuration list for PBXNativeTarget "Dino JumpUITests" */;
+			buildPhases = (
+				EF315FCF25096796001FF033 /* Sources */,
+				EF315FD025096796001FF033 /* Frameworks */,
+				EF315FD125096796001FF033 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF315FD525096796001FF033 /* PBXTargetDependency */,
+			);
+			name = "Dino JumpUITests";
+			productName = "Dino JumpUITests";
+			productReference = EF315FD325096796001FF033 /* Dino JumpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF315FA625096789001FF033 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Soumya Jain";
+				TargetAttributes = {
+					EF315FAD25096789001FF033 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					EF315FC725096796001FF033 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = EF315FAD25096789001FF033;
+					};
+					EF315FD225096796001FF033 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = EF315FAD25096789001FF033;
+					};
+				};
+			};
+			buildConfigurationList = EF315FA925096789001FF033 /* Build configuration list for PBXProject "Dino Jump" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF315FA525096789001FF033;
+			productRefGroup = EF315FAF25096789001FF033 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF315FAD25096789001FF033 /* Dino Jump */,
+				EF315FC725096796001FF033 /* Dino JumpTests */,
+				EF315FD225096796001FF033 /* Dino JumpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF315FAC25096789001FF033 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF22CE2A250BEADF00DF99AD /* dinosaur.png in Resources */,
+				EF315FBD2509678A001FF033 /* Main.storyboard in Resources */,
+				EF315FBF25096795001FF033 /* Assets.xcassets in Resources */,
+				EF315FC225096795001FF033 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF315FC625096796001FF033 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF315FD125096796001FF033 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF315FAA25096789001FF033 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF22CE27250AD19C00DF99AD /* SVDino.swift in Sources */,
+				EF315FED25096FC2001FF033 /* Constants.swift in Sources */,
+				EF315FB82509678A001FF033 /* GameScene.swift in Sources */,
+				EF315FBA2509678A001FF033 /* GameViewController.swift in Sources */,
+				EF315FF025097146001FF033 /* SVMovingGround.swift in Sources */,
+				EF22CE2D250C1DCD00DF99AD /* SVDinoLeg.swift in Sources */,
+				EF315FB225096789001FF033 /* AppDelegate.swift in Sources */,
+				EF315FE825096EE2001FF033 /* UIColor+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF315FC425096796001FF033 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF315FCD25096796001FF033 /* Dino_JumpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF315FCF25096796001FF033 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF315FD825096796001FF033 /* Dino_JumpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF315FCA25096796001FF033 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF315FAD25096789001FF033 /* Dino Jump */;
+			targetProxy = EF315FC925096796001FF033 /* PBXContainerItemProxy */;
+		};
+		EF315FD525096796001FF033 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF315FAD25096789001FF033 /* Dino Jump */;
+			targetProxy = EF315FD425096796001FF033 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF315FBB2509678A001FF033 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF315FBC2509678A001FF033 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF315FC025096795001FF033 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF315FC125096795001FF033 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF315FDA25096796001FF033 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF315FDB25096796001FF033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF315FDD25096796001FF033 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dino Jump/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "swiftvilla.Dino-Jump";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF315FDE25096796001FF033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dino Jump/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "swiftvilla.Dino-Jump";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF315FE025096796001FF033 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dino JumpTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "swiftvilla.Dino-JumpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dino Jump.app/Dino Jump";
+			};
+			name = Debug;
+		};
+		EF315FE125096796001FF033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dino JumpTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "swiftvilla.Dino-JumpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dino Jump.app/Dino Jump";
+			};
+			name = Release;
+		};
+		EF315FE325096796001FF033 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dino JumpUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "swiftvilla.Dino-JumpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Dino Jump";
+			};
+			name = Debug;
+		};
+		EF315FE425096796001FF033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Dino JumpUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "swiftvilla.Dino-JumpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Dino Jump";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF315FA925096789001FF033 /* Build configuration list for PBXProject "Dino Jump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF315FDA25096796001FF033 /* Debug */,
+				EF315FDB25096796001FF033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF315FDC25096796001FF033 /* Build configuration list for PBXNativeTarget "Dino Jump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF315FDD25096796001FF033 /* Debug */,
+				EF315FDE25096796001FF033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF315FDF25096796001FF033 /* Build configuration list for PBXNativeTarget "Dino JumpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF315FE025096796001FF033 /* Debug */,
+				EF315FE125096796001FF033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF315FE225096796001FF033 /* Build configuration list for PBXNativeTarget "Dino JumpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF315FE325096796001FF033 /* Debug */,
+				EF315FE425096796001FF033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF315FA625096789001FF033 /* Project object */;
+}
